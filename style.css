@@ -1,19 +1,74 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color:  #0f172a; /* Azul marinho */
+    color: #ffffff; /* Branco para o texto */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #050d14; /* Azul marinho mais escuro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
 }
 
 h1 {
+    color:  #a3e635; /* Verde neon */
     margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ffffff; /* Borda branca */
+    border-radius: 5px;
+    background-color: #001933; /* Azul bem escuro */
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #8a8a8a;
+}
+
+button {
+    background-color:  #a3e635; /* Verde neon */
+    color: #001f3f; /* Azul marinho */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2dbd12; /* Verde neon um pouco mais escuro */
+}
+
+button:active {
+    background-color: #28a510; /* Verde neon ainda mais escuro */
 }
